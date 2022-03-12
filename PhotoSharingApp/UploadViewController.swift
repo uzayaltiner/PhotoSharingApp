@@ -60,7 +60,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
                             if let imageURL = imageURL {
                                 let firestoreDatabase = Firestore.firestore()
                                 
-                                let firestorePost = ["imageURl" : imageURL, "comment"  : self.commentTextField.text!, "email" : Auth.auth().currentUser!.email, "date": FieldValue.serverTimestamp() ] as [String : Any]
+                                let firestorePost = ["imageURL" : imageURL, "comment"  : self.commentTextField.text!, "email" : Auth.auth().currentUser!.email, "date": FieldValue.serverTimestamp() ] as [String : Any]
                                 
                                 firestoreDatabase.collection("Post").addDocument(data: firestorePost) { (error) in
                                     

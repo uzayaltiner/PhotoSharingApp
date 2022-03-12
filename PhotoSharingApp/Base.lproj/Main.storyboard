@@ -169,7 +169,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="igV-Gi-RPn">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="igV-Gi-RPn">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -214,7 +214,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="commentText" destination="H1O-iI-MZc" id="Suk-VF-R5W"/>
-                                            <outlet property="emainText" destination="QyY-dd-c2u" id="7Cq-ld-GfW"/>
+                                            <outlet property="emailText" destination="QyY-dd-c2u" id="TzB-I8-ySQ"/>
                                             <outlet property="postImageView" destination="bHX-CH-b1k" id="xNR-bZ-Scr"/>
                                         </connections>
                                     </tableViewCell>
