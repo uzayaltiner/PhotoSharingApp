@@ -28,6 +28,9 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9d-q2-CZg">
                                 <rect key="frame" x="239" y="433" width="90" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="4cl-ks-lPg"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Signup"/>
                                 <connections>
@@ -36,9 +39,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxl-wP-4dD">
                                 <rect key="frame" x="86" y="433" width="90" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="QXR-l0-GIf"/>
-                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
                                 <connections>
@@ -49,17 +49,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Pyl-ie-WXU" firstAttribute="leading" secondItem="Ini-Z5-SQ9" secondAttribute="leading" id="4wo-Vg-ld6"/>
-                            <constraint firstItem="Ini-Z5-SQ9" firstAttribute="trailing" secondItem="O9d-q2-CZg" secondAttribute="trailing" id="8vT-5K-U1L"/>
-                            <constraint firstItem="Pyl-ie-WXU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="ET8-zu-qcn"/>
-                            <constraint firstItem="O9d-q2-CZg" firstAttribute="leading" secondItem="cxl-wP-4dD" secondAttribute="trailing" constant="63" id="Ons-TC-k8H"/>
-                            <constraint firstItem="Ini-Z5-SQ9" firstAttribute="top" secondItem="Pyl-ie-WXU" secondAttribute="bottom" constant="31" id="aPr-08-dsR"/>
-                            <constraint firstItem="cxl-wP-4dD" firstAttribute="top" secondItem="Ini-Z5-SQ9" secondAttribute="bottom" constant="43" id="goX-Op-Aha"/>
-                            <constraint firstItem="Pyl-ie-WXU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hU0-IA-Mh0"/>
-                            <constraint firstItem="Ini-Z5-SQ9" firstAttribute="leading" secondItem="cxl-wP-4dD" secondAttribute="leading" id="n2r-ds-e4b"/>
-                            <constraint firstItem="Pyl-ie-WXU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="247" id="oMD-OI-Fpr"/>
-                            <constraint firstItem="cxl-wP-4dD" firstAttribute="baseline" secondItem="O9d-q2-CZg" secondAttribute="baseline" id="tNI-Rp-zHG"/>
-                            <constraint firstItem="Pyl-ie-WXU" firstAttribute="trailing" secondItem="Ini-Z5-SQ9" secondAttribute="trailing" id="y98-1W-KJh"/>
+                            <constraint firstItem="Pyl-ie-WXU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="3vM-xh-xW2"/>
+                            <constraint firstItem="cxl-wP-4dD" firstAttribute="baseline" secondItem="O9d-q2-CZg" secondAttribute="baseline" id="6xs-DA-bdw"/>
+                            <constraint firstItem="Ini-Z5-SQ9" firstAttribute="trailing" secondItem="O9d-q2-CZg" secondAttribute="trailing" id="9Ns-SN-udw"/>
+                            <constraint firstItem="Ini-Z5-SQ9" firstAttribute="top" secondItem="Pyl-ie-WXU" secondAttribute="bottom" constant="31" id="D55-4R-qZZ"/>
+                            <constraint firstItem="Pyl-ie-WXU" firstAttribute="trailing" secondItem="Ini-Z5-SQ9" secondAttribute="trailing" id="DTJ-gU-zy4"/>
+                            <constraint firstItem="Pyl-ie-WXU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HQv-Yn-GNH"/>
+                            <constraint firstItem="Ini-Z5-SQ9" firstAttribute="leading" secondItem="cxl-wP-4dD" secondAttribute="leading" id="STb-tX-lR1"/>
+                            <constraint firstItem="cxl-wP-4dD" firstAttribute="top" secondItem="Ini-Z5-SQ9" secondAttribute="bottom" constant="43" id="T29-Yr-CWC"/>
+                            <constraint firstItem="Pyl-ie-WXU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="247" id="UDD-Nd-Bri"/>
+                            <constraint firstItem="O9d-q2-CZg" firstAttribute="leading" secondItem="cxl-wP-4dD" secondAttribute="trailing" constant="63" id="Yqi-Kd-uDE"/>
+                            <constraint firstItem="Pyl-ie-WXU" firstAttribute="leading" secondItem="Ini-Z5-SQ9" secondAttribute="leading" id="qKw-rW-cJ1"/>
                         </constraints>
                     </view>
                     <connections>
@@ -79,14 +79,54 @@
                     <view key="view" contentMode="scaleToFill" id="XIX-LH-lAY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="Thq-dk-jyQ">
+                                <rect key="frame" x="20" y="68" width="374" height="262"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="262" id="ZaU-u5-7Sz"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gr1-NX-jtN">
+                                <rect key="frame" x="20" y="351" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Q6v-4s-gOF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2W-ho-KGB">
+                                <rect key="frame" x="121" y="433" width="172" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Share"/>
+                                <connections>
+                                    <action selector="shareButtonTapped:" destination="Ohz-m7-0hD" eventType="touchUpInside" id="Fw7-cQ-PSd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Oej-hs-dhN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Thq-dk-jyQ" firstAttribute="leading" secondItem="gr1-NX-jtN" secondAttribute="leading" id="9YC-yW-b9i"/>
+                            <constraint firstItem="e2W-ho-KGB" firstAttribute="centerY" secondItem="XIX-LH-lAY" secondAttribute="centerY" id="B0s-m4-uQ5"/>
+                            <constraint firstItem="Thq-dk-jyQ" firstAttribute="trailing" secondItem="XIX-LH-lAY" secondAttribute="trailingMargin" id="D6m-ON-MSx"/>
+                            <constraint firstItem="Thq-dk-jyQ" firstAttribute="leading" secondItem="XIX-LH-lAY" secondAttribute="leadingMargin" id="Q97-ju-OFV"/>
+                            <constraint firstItem="Thq-dk-jyQ" firstAttribute="top" secondItem="Oej-hs-dhN" secondAttribute="top" constant="24" id="TPA-oa-loL"/>
+                            <constraint firstItem="e2W-ho-KGB" firstAttribute="top" secondItem="gr1-NX-jtN" secondAttribute="bottom" constant="48" id="lM6-O5-hBL"/>
+                            <constraint firstItem="Thq-dk-jyQ" firstAttribute="trailing" secondItem="gr1-NX-jtN" secondAttribute="trailing" id="omg-ZC-llU"/>
+                            <constraint firstItem="gr1-NX-jtN" firstAttribute="top" secondItem="Thq-dk-jyQ" secondAttribute="bottom" constant="21" id="prt-qK-f6Q"/>
+                            <constraint firstItem="e2W-ho-KGB" firstAttribute="leading" secondItem="Oej-hs-dhN" secondAttribute="leading" constant="121" id="va6-NQ-tG5"/>
+                            <constraint firstItem="gr1-NX-jtN" firstAttribute="centerX" secondItem="e2W-ho-KGB" secondAttribute="centerX" id="xSd-sN-OIb"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Upload" id="lJH-F2-5FL"/>
+                    <tabBarItem key="tabBarItem" title="Upload" image="square.and.arrow.up.circle.fill" catalog="system" id="lJH-F2-5FL"/>
+                    <connections>
+                        <outlet property="commentTextField" destination="gr1-NX-jtN" id="egz-95-bdQ"/>
+                        <outlet property="imageView" destination="Thq-dk-jyQ" id="pz7-bQ-X2Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BMr-DE-QJ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725" y="367"/>
+            <point key="canvasLocation" x="1724.6376811594205" y="366.96428571428572"/>
         </scene>
         <!--Settings-->
         <scene sceneID="MYX-Wb-H5a">
@@ -112,7 +152,7 @@
                             <constraint firstItem="hk6-fn-Egl" firstAttribute="centerY" secondItem="hZG-Fe-ckN" secondAttribute="centerY" id="aUp-cv-ofD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="gv8-8E-z4q"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape.circle.fill" catalog="system" id="gv8-8E-z4q"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="toLoginVC" modalPresentationStyle="fullScreen" id="Co5-Zt-TlQ"/>
                     </connections>
@@ -131,7 +171,7 @@
                         <viewLayoutGuide key="safeArea" id="kfO-sW-6fP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Feed" id="0U9-32-TRH"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="clock.fill" catalog="system" id="0U9-32-TRH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Pc-1G-p2z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,7 +199,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="clock.fill" catalog="system" width="128" height="121"/>
+        <image name="defaultImage" width="1024" height="1024"/>
+        <image name="gearshape.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
