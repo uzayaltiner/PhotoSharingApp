@@ -70,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="66.964285714285708"/>
+            <point key="canvasLocation" x="-191" y="67"/>
         </scene>
         <!--Upload-->
         <scene sceneID="4wo-5f-8z7">
@@ -140,7 +140,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="fhb-Lw-tT4">
             <objects>
-                <tabBarController id="kAN-TI-4B3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarID" id="kAN-TI-4B3" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="eZ9-wl-5QC"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s9v-4o-EqZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
